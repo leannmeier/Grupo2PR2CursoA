@@ -1,0 +1,62 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>470</x><y>200</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+/Categoria/
+--
+
+--
+
+/+calcularSueldoNeto(Empleado): float/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>60</y><w>240</w><h>220</h></coordinates><panel_attributes>Empleado
+--
+_-MIN_DIA_INGRESO: int = 1_
+_-MAX_DIA_INGRESO: int = 31_
+-nombre: String
+-sueldoBase: float
+//de 1 a 31
+-diaIngresoACompania: int
+-cantHijos: int
+--
++aplicarBonosYDescuentos(): float
++cambiarCategoria(Categoria): boolean
++getSueldoBase(): float
++getDiaIngresoACompania(): int
++getNombre(): String
++getCantHijos(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>230</x><y>380</y><w>220</w><h>140</h></coordinates><panel_attributes>CategoriaA
+--
+
+--
++CategoriaA()
+
+*+calcularSueldoNeto(Empleado): float*
+-calculoDelBono(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>380</y><w>220</w><h>140</h></coordinates><panel_attributes>CategoriaB
+--
+
+--
++CategoriaB()
+
+*+calcularSueldoNeto(Empleado): float*
+-calculoDeDescuento(float, int): double
+-nombreEmpiezaConVocal(String): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>710</x><y>380</y><w>180</w><h>140</h></coordinates><panel_attributes>CategoriaC
+--
+_-VALOR_BONO: int = 500_
+--
++CategoriaC()
+
+*+calcularSueldoNeto(Empleado): float*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>70</y><w>200</w><h>150</h></coordinates><panel_attributes>lt=&lt;-
+-categoria
+m1=1</panel_attributes><additional_attributes>170;130;170;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>290</y><w>270</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>250;10;250;50;10;50;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>290</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>290</y><w>250</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50;230;50;230;90</additional_attributes></element><element><id>UMLNote</id><coordinates><x>230</x><y>520</y><w>220</w><h>120</h></coordinates><panel_attributes>Note..
+Categoría A: Los empleados que
+ tengan esta categoría recibirán 
+un bono equivalente al X% de su
+sueldo bruto anual, siendo X el día
+ de ingreso a la compañía (de 1 a 31).
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>470</x><y>520</y><w>220</w><h>120</h></coordinates><panel_attributes>Note..
+Los empleados de la categoría 
+B recibirán un descuento de su
+ sueldo si es que su nombre empieza
+ con una vocal equivalente al X%
+ de su sueldo bruto anual, 
+siendo X la cantidad de hijos que tienen
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>710</x><y>520</y><w>180</w><h>120</h></coordinates><panel_attributes>Note..
+Categoría C: Los empleados 
+de categoría C recibirán 
+un bono de $500.
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element></diagram>

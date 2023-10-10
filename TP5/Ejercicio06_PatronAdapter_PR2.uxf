@@ -1,0 +1,57 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>140</x><y>0</y><w>250</w><h>100</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+Mapeador
+--
+- field: type
+--
++ getDireccion(double,double): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>0</y><w>250</w><h>100</h></coordinates><panel_attributes>&lt;&lt;class||interface||API&gt;&gt;
+BingMaps
+--
+- field: type
+--
++ obtenerDireccion(double,double): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>30</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+- maps
+m1=*</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>150</y><w>250</w><h>100</h></coordinates><panel_attributes>&lt;&lt;class||interface||API&gt;&gt;
+GoogleMaps
+--
+- field: type
+--
++ getAddress(double,double): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>790</x><y>0</y><w>250</w><h>40</h></coordinates><panel_attributes>BingMaps no se puede modificar
+es una interface o una clase?
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>150</y><w>190</w><h>100</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+AdaptadorGoogleMaps
+--
+
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>180</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+- maps
+m1=*</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>610</y><w>250</w><h>100</h></coordinates><panel_attributes>&lt;&lt;inteface&gt;&gt;
+BingMaps
+--
+- field: type
+--
++ obtenerDireccion(double,double): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>650</x><y>610</y><w>250</w><h>100</h></coordinates><panel_attributes>&lt;&lt;inteface&gt;&gt;
+GoogleMaps
+--
+- field: type
+--
++ getAddress(double,double): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>90</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>90</y><w>170</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>150;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>460</y><w>190</w><h>100</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+MapaConBingMaps
+--
+
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>460</y><w>190</w><h>100</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+MapaConGoogleMaps
+--
+
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>310</y><w>190</w><h>100</h></coordinates><panel_attributes>&lt;&lt;abstract&gt;&gt;
+/Maps/
+--
+
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>110</x><y>310</y><w>250</w><h>100</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+Mapeador
+--
+- field: type
+--
++ getDireccion(double,double): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>340</y><w>190</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+- maps</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>400</y><w>100</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>400</y><w>100</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;60</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>550</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>550</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element></diagram>

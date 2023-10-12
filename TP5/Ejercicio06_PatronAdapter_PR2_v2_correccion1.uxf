@@ -1,0 +1,26 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>210</x><y>230</y><w>250</w><h>100</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+Mapeador
+--
+- field: type
+--
++ getDireccion(double,double): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>230</y><w>260</w><h>100</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+BingMaps
+--
+- field: type
+--
++ obtenerDireccion(decimal,decimal): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>260</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+- maps
+m1=*</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>380</y><w>260</w><h>100</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+GoogleMaps
+--
+- field: type
+--
++ getAddress(double,double): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>380</y><w>280</w><h>100</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+AdaptadorGoogleMaps
+--
+
+--
+*+ obtenerDireccion(decimal,decimal): String*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>410</y><w>100</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+- maps
+m1=1</panel_attributes><additional_attributes>80;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>320</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>320</y><w>170</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;10;10;60</additional_attributes></element></diagram>

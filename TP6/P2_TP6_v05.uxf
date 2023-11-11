@@ -1,0 +1,32 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>510</x><y>100</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+/Molde/
+--
+
+--
+/+crearJuguete(): Juguete/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>250</y><w>160</w><h>100</h></coordinates><panel_attributes>MoldeAvion
+--
+
+--
+*+crearJuguete(): Juguete*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>250</y><w>160</w><h>100</h></coordinates><panel_attributes>MoldeAuto
+--
+
+--
+*+crearJuguete(): Juguete*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>190</y><w>90</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>70;10;70;40;10;40;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>190</y><w>100</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;40;80;40;80;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>90</y><w>210</w><h>100</h></coordinates><panel_attributes>Operario
+--
+
+--
++apretarBoton(): Juguete</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>110</y><w>130</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..n</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>390</y><w>110</w><h>100</h></coordinates><panel_attributes>Auto
+--
+
+--
+*+mensaje(): void*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>390</y><w>110</w><h>100</h></coordinates><panel_attributes>Avion
+--
+
+--
+*+mensaje(): void*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>540</y><w>190</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+/Juguete/
+--
+
+--
+/+mensaje(): void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>480</y><w>90</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>70;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>480</y><w>90</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;60;70;10</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>340</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>340</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element></diagram>

@@ -1,0 +1,19 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>460</x><y>180</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Fabrica
+--
+
+--
++crear()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>330</y><w>150</w><h>100</h></coordinates><panel_attributes>Avion
+--
+
+--
++crear()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>330</y><w>130</w><h>100</h></coordinates><panel_attributes>Auto
+--
+
+--
++crear()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>270</y><w>100</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>80;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>270</y><w>110</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;90;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>170</y><w>210</w><h>100</h></coordinates><panel_attributes>Operario
+--
+
+--
++apretarBoton(): Fabrica</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>190</y><w>140</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>120;10;10;10</additional_attributes></element></diagram>

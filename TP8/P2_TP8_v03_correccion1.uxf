@@ -1,0 +1,65 @@
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>209</x><y>264</y><w>231</w><h>143</h></coordinates><panel_attributes>&lt;&lt;Abstract&gt;&gt;
+/Maquina/
+--
+
+--
++notificarCambios(): void
+
++suscribir(Medico): void
++eliminarSuscriptor(Medico): void
+fg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>209</x><y>495</y><w>209</w><h>88</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+Termometro
+--
+-tempEnGradosCelsius: double
+--
++medirTemp(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>22</x><y>495</y><w>176</w><h>88</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+TomadorDePulso
+--
+-pulsacionesXMin: int
+--
++tomarPulso(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>429</x><y>495</y><w>110</w><h>88</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+Balanza
+--
+-kg: double
+--
++pesar(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>99</x><y>396</y><w>242</w><h>121</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>200;10;200;60;10;60;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>308</x><y>396</y><w>198</w><h>121</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60;160;60;160;90</additional_attributes></element><element><id>Relation</id><coordinates><x>308</x><y>396</y><w>33</w><h>121</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>11</x><y>297</y><w>99</w><h>77</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+Paciente
+--
+-idPaciente: int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>99</x><y>297</y><w>132</w><h>55</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-paciente</panel_attributes><additional_attributes>10;20;100;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>759</x><y>297</y><w>231</w><h>154</h></coordinates><panel_attributes>&lt;&lt;Abstract&gt;&gt;
+/Medico/
+--
+-pager: String
+-id:int
+--
++suscribirse(Maquina): void
++deSuscribirse(Maquina): void
+
+/+reaccionar(): void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>407</x><y>77</y><w>110</w><h>77</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+Persona
+--
+-numTel: String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>55</x><y>143</y><w>429</w><h>176</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>370;10;370;40;10;40;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>451</x><y>143</y><w>451</w><h>176</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;390;40;390;140</additional_attributes></element><element><id>UMLClass</id><coordinates><x>957</x><y>506</y><w>132</w><h>77</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+Traumatologo
+--
+--
+*+reaccionar(): void*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>803</x><y>506</y><w>143</w><h>77</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+Nutricionista
+--
+--
+*+reaccionar(): void*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>649</x><y>506</y><w>143</w><h>77</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+Cardiologo
+--
+--
+*+reaccionar(): void*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>715</x><y>440</y><w>187</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;10;150;40;10;40;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>869</x><y>440</y><w>176</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;140;40;140;60</additional_attributes></element><element><id>Relation</id><coordinates><x>869</x><y>440</y><w>33</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>429</x><y>297</y><w>352</w><h>55</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..n
+-medicosSuscritos
+fg=yellow</panel_attributes><additional_attributes>300;20;10;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>275</x><y>220</y><w>187</w><h>33</h></coordinates><panel_attributes>Publisher/Abstract Subject
+fg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>891</x><y>253</y><w>198</w><h>33</h></coordinates><panel_attributes>Suscriber/Abstract Observer
+fg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>770</x><y>594</y><w>209</w><h>33</h></coordinates><panel_attributes>Suscriber/Concrete Observer
+fg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>209</x><y>594</y><w>198</w><h>33</h></coordinates><panel_attributes>Publisher/Concrete Subject
+fg=yellow</panel_attributes><additional_attributes></additional_attributes></element></diagram>

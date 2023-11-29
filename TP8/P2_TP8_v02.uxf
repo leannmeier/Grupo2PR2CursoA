@@ -1,0 +1,60 @@
+<diagram program="umletino" version="15.1"><zoom_level>13</zoom_level><element><id>UMLClass</id><coordinates><x>325</x><y>364</y><w>273</w><h>169</h></coordinates><panel_attributes>&lt;&lt;Abstract&gt;&gt;
+/Maquina/
+--
+--
++notificarCambios(): void
+
++suscribir(Medico): void
++eliminarSuscriptor(Medico): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>325</x><y>637</y><w>247</w><h>91</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+Termometro
+--
+-tempEnGradosCelsius: double
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>104</x><y>637</y><w>208</w><h>91</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+TomadorDePulso
+--
+-pulsacionesXMin: int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>585</x><y>637</y><w>130</w><h>91</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+Balanza
+--
+-kg: double
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>195</x><y>520</y><w>286</w><h>143</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>200;10;200;60;10;60;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>442</x><y>520</y><w>234</w><h>143</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60;160;60;160;90</additional_attributes></element><element><id>Relation</id><coordinates><x>442</x><y>520</y><w>39</w><h>143</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>143</x><y>208</y><w>117</w><h>91</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+Paciente
+--
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>247</x><y>247</y><w>143</w><h>195</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-paciente</panel_attributes><additional_attributes>10;10;40;10;40;130;60;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>975</x><y>338</y><w>273</w><h>169</h></coordinates><panel_attributes>&lt;&lt;Abstract&gt;&gt;
+/Medico/
+--
+-pager: String
+-id:int
+--
++suscribirse(Maquina): void
++deSuscribirse(Maquina): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>598</x><y>0</y><w>130</w><h>91</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+Persona
+--
+-numTel: String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>195</x><y>78</y><w>494</w><h>156</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>360;10;360;50;10;50;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>78</y><w>494</w><h>286</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50;340;50;360;200</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1209</x><y>572</y><w>156</w><h>91</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+Traumatologo
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1027</x><y>572</y><w>169</w><h>91</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+Nutricionista
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>845</x><y>572</y><w>169</w><h>91</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+Cardiologo
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>923</x><y>494</y><w>221</w><h>104</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;10;150;40;10;40;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>1105</x><y>494</y><w>208</w><h>104</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;140;40;140;60</additional_attributes></element><element><id>Relation</id><coordinates><x>1105</x><y>494</y><w>39</w><h>104</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>585</x><y>364</y><w>416</w><h>65</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..n
+-maquinasObservadas
+fg=yellow</panel_attributes><additional_attributes>10;20;300;20</additional_attributes></element></diagram>
